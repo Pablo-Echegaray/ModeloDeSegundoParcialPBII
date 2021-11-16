@@ -4,16 +4,17 @@ public class Carne extends Comestible {
 
 	private String descripcion;
 	private String marca;
-	private Double precio;
+	
 	private Double kilos;
+	//(2, "Tapa de nalga", "07/07/2021", "15/07/2021", 2.0, "La Estancia", 600.0)
 
 	public Carne(Integer id, String descripcion, String fechaDeElaboracion, String fechaDeVencimiento, Double kilos,
 			String marca, Double precio) {
-		super(id, fechaDeElaboracion, fechaDeVencimiento);
+		super(id, fechaDeElaboracion, fechaDeVencimiento, precio);
 
 		this.descripcion = descripcion;
 		this.marca = marca;
-		this.precio = precio;
+		
 		this.kilos = kilos;
 	}
 
@@ -33,13 +34,7 @@ public class Carne extends Comestible {
 		this.marca = marca;
 	}
 
-	public Double getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(Double precio) {
-		this.precio = precio;
-	}
+	
 
 	public Double getKilos() {
 		return kilos;

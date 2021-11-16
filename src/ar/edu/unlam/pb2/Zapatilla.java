@@ -11,11 +11,11 @@ public class Zapatilla extends Indumentaria {
 
 	public Zapatilla(Integer id, String descripcion, String talle, String marca, String color, Double precio) {
 		// TODO Auto-generated constructor stub
-		super(id, talle, color);
+		super(id, talle, color, precio);
 
 		this.descripcion = descripcion;
 		this.marca = marca;
-		this.precio = precio;
+
 	}
 
 	public String getDescripcion() {
@@ -43,12 +43,5 @@ public class Zapatilla extends Indumentaria {
 		this.color = color;
 	}
 
-	public Double getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(Double precio) {
-		this.precio = precio;
-	}
 
 }

@@ -10,12 +10,12 @@ public class Televisor extends Electrodomestico {
 	private Double precio;
 
 	public Televisor(Integer id, String descripcion, Integer pulgadas, Integer garantia, String marca, Double precio) {
-		super(id, garantia);
+		super(id, garantia, precio);
 
 		this.descripcion = descripcion;
 		this.pulgadas = pulgadas;
 		this.marca = marca;
-		this.precio = precio;
+
 	}
 
 	public String getDescripcion() {
@@ -42,12 +42,6 @@ public class Televisor extends Electrodomestico {
 		this.marca = marca;
 	}
 
-	public Double getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(Double precio) {
-		this.precio = precio;
-	}
+	
 
 }

@@ -10,12 +10,12 @@ public class Remera extends Indumentaria {
 	Double precio;
 
 	public Remera(Integer id, String descripcion, String talle, String marca, String color, Double precio) {
-		super(id, talle, color);
+		super(id, talle, color, precio);
 
 		this.descripcion = descripcion;
 		this.marca = marca;
 
-		this.precio = precio;
+	
 	}
 
 	public String getDescripcion() {
@@ -53,12 +53,6 @@ public class Remera extends Indumentaria {
 		this.color = color;
 	}
 
-	public Double getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(Double precio) {
-		this.precio = precio;
-	}
+	
 
 }

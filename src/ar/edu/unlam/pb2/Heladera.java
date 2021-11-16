@@ -8,11 +8,11 @@ public class Heladera extends Electrodomestico {
 	private Double precio;
 
 	public Heladera(Integer id, String descripcion, Boolean frost, Integer garantia, String marca, Double precio) {
-		super(id, garantia);
+		super(id, garantia, precio);
 		this.descripcion = descripcion;
 		this.frost = frost;
 		this.marca = marca;
-		this.precio = precio;
+	
 
 	}
 
@@ -36,12 +36,6 @@ public class Heladera extends Electrodomestico {
 		this.marca = marca;
 	}
 
-	public Double getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(Double precio) {
-		this.precio = precio;
-	}
+	
 
 }

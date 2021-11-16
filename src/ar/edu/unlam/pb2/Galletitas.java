@@ -6,15 +6,15 @@ public class Galletitas extends Comestible {
 
 	private String descripcion;
 	private String marca;
-	private Double precio;
+
 
 	public Galletitas(Integer id, String descripcion, String fechaDeElaboracion, String fechaDeVencimiento,
 			String marca, Double precio) {
-		super(id, fechaDeElaboracion, fechaDeVencimiento);
+		super(id, fechaDeElaboracion, fechaDeVencimiento, precio);
 
 		this.descripcion = descripcion;
 		this.marca = marca;
-		this.precio = precio;
+
 	}
 
 	public String getDescripcion() {
@@ -33,8 +33,6 @@ public class Galletitas extends Comestible {
 		this.marca = marcaString;
 	}
 
-	public Double getPrecio() {
-		return precio;
-	}
+	
 
 }

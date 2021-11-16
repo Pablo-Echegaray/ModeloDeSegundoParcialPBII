@@ -5,8 +5,8 @@ public class Comestible extends Producto {
 	private String fechaDeElaboracion;
 	private String fechaDeVencimiento;
 
-	public Comestible(Integer id, String fechaDeElaboracion, String fechaDeVencimiento) {
-		super(id);
+	public Comestible(Integer id, String fechaDeElaboracion, String fechaDeVencimiento, Double precio) {
+		super(id, precio);
 		this.fechaDeElaboracion = fechaDeElaboracion;
 		this.fechaDeVencimiento = fechaDeVencimiento;
 	}

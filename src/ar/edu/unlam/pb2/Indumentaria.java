@@ -5,8 +5,8 @@ public class Indumentaria extends Producto {
 	String talle;
 	String color;
 
-	public Indumentaria(Integer id, String talle, String color) {
-		super(id);
+	public Indumentaria(Integer id, String talle, String color, Double precio) {
+		super(id, precio);
 		this.talle = talle;
 		this.color = color;
 	}
